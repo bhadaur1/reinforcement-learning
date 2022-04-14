@@ -7,7 +7,7 @@ class TestBed(object):
         self.n = n
         self.seed = seed
         self.rng = np.random.default_rng(self.seed)
-        self.mu = self.rng.normal(0, 5.0, self.n)
+        self.mu = self.rng.normal(0, 1.0, self.n)
         self.sig = np.ones(self.n, dtype=np.float32)
         self.id = uuid.uuid1()
 
