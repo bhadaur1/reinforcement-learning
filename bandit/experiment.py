@@ -2,7 +2,7 @@ import numpy as np
 from timeit import default_timer as timer
 
 
-class EpsilonGreedy(object):
+class BanditExperiment(object):
     def __init__(self, epsilon, testbed, alpha=None, seed=1993):
         self.epsilon = epsilon
         self.testbed = testbed
